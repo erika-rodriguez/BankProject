@@ -1,6 +1,6 @@
-package daoInterfaces;
+package  com.solvd.daoInterfaces;
 
-import entity.Branch;
+import  com.solvd.entity.Branch;
 
 public interface IBranchDAO extends IGenericDAO<Branch,Integer> {
 }

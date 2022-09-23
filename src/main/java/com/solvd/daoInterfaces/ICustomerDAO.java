@@ -1,6 +1,6 @@
-package daoInterfaces;
+package  com.solvd.daoInterfaces;
 
-import entity.Customer;
+import  com.solvd.entity.Customer;
 
 public interface ICustomerDAO extends IGenericDAO<Customer,Integer> {
 }

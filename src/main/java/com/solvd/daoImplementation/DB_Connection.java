@@ -1,6 +1,6 @@
-package daoImplementation;
+package  com.solvd.daoImplementation;
 
-import daoInterfaces.*;
+import  com.solvd.daoInterfaces.*;
 
 import java.sql.*;
 

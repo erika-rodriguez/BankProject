@@ -1,8 +1,7 @@
-package daoImplementation;
+package  com.solvd.daoImplementation;
 
-import daoInterfaces.ITransactionTypeDAO;
-import entity.Loan;
-import entity.TransactionType;
+import  com.solvd.daoInterfaces.ITransactionTypeDAO;
+import  com.solvd.entity.TransactionType;
 
 import java.sql.Connection;
 import java.sql.ResultSet;

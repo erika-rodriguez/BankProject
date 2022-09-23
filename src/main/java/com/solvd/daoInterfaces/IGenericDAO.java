@@ -1,4 +1,4 @@
-package daoInterfaces;
+package  com.solvd.daoInterfaces;
 
 import java.sql.ResultSet;
 import java.sql.SQLException;

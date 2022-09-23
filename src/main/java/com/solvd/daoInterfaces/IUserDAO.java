@@ -1,6 +1,6 @@
-package daoInterfaces;
+package  com.solvd.daoInterfaces;
 
-import entity.User;
+import  com.solvd.entity.User;
 
 public interface IUserDAO extends IGenericDAO<User,Integer> {
 }

@@ -1,8 +1,7 @@
-package daoImplementation;
+package  com.solvd.daoImplementation;
 
-import daoInterfaces.ISalaryDAO;
-import entity.Loan;
-import entity.Salary;
+import  com.solvd.daoInterfaces.ISalaryDAO;
+import  com.solvd.entity.Salary;
 
 import java.sql.Connection;
 import java.sql.ResultSet;

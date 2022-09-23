@@ -1,8 +1,8 @@
-package daoImplementation;
+package  com.solvd.daoImplementation;
 
-import daoInterfaces.ICustomerDAO;
-import entity.Branch;
-import entity.Customer;
+import  com.solvd.daoInterfaces.ICustomerDAO;
+import  com.solvd.entity.Branch;
+import  com.solvd.entity.Customer;
 
 import java.sql.Connection;
 import java.sql.Date;

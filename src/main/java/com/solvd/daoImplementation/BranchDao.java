@@ -1,7 +1,7 @@
-package daoImplementation;
+package  com.solvd.daoImplementation;
 
-import daoInterfaces.IBranchDAO;
-import entity.Branch;
+import  com.solvd.daoInterfaces.IBranchDAO;
+import  com.solvd.entity.Branch;
 
 import java.sql.Connection;
 import java.sql.ResultSet;

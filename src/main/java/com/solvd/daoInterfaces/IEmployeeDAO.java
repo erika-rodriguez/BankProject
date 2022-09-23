@@ -1,7 +1,7 @@
-package daoInterfaces;
+package  com.solvd.daoInterfaces;
 
 
-import entity.Employee;
+import  com.solvd.entity.Employee;
 
 public interface IEmployeeDAO extends IGenericDAO<Employee,Integer> {
 }

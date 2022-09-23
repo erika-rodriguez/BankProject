@@ -1,6 +1,6 @@
-package daoInterfaces;
+package  com.solvd.daoInterfaces;
 
-import entity.AccountStatus;
+import  com.solvd.entity.AccountStatus;
 
 public interface IAccountStatusDAO extends IGenericDAO<AccountStatus,Integer> {
 }

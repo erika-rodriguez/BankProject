@@ -1,4 +1,4 @@
-package daoInterfaces;
+package  com.solvd.daoInterfaces;
 
 public interface IDaoManager {
     IAccountDAO getAccountDao();

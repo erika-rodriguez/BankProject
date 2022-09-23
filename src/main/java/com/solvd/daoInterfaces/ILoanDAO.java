@@ -1,6 +1,6 @@
-package daoInterfaces;
+package  com.solvd.daoInterfaces;
 
-import entity.Loan;
+import  com.solvd.entity.Loan;
 
 public interface ILoanDAO extends IGenericDAO<Loan,Integer> {
 
