@@ -1,7 +1,7 @@
-package daoImplementation;
+package  com.solvd.daoImplementation;
 
-import daoInterfaces.IAccountStatusDAO;
-import entity.AccountStatus;
+import  com.solvd.daoInterfaces.IAccountStatusDAO;
+import  com.solvd.entity.AccountStatus;
 
 import java.sql.*;
 import java.util.ArrayList;

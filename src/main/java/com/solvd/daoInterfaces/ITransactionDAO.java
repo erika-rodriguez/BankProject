@@ -1,6 +1,6 @@
-package daoInterfaces;
+package  com.solvd.daoInterfaces;
 
-import entity.Transaction;
+import  com.solvd.entity.Transaction;
 
 public interface ITransactionDAO extends IGenericDAO<Transaction,Integer> {
 }
