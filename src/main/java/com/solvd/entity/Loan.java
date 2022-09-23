@@ -1,4 +1,4 @@
-package entity;
+package  com.solvd.entity;
 
 public class Loan {
     private Integer id_loan;

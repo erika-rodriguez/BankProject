@@ -1,3 +1,5 @@
+package com.solvd;
+
 import com.mysql.cj.MysqlConnection;
 
 import java.sql.Connection;

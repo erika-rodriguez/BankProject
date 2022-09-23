@@ -1,4 +1,4 @@
-package entity;
+package  com.solvd.entity;
 
 public class Department {
     private Integer id_department;

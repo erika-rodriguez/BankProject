@@ -1,4 +1,4 @@
-package entity;
+package  com.solvd.entity;
 
 public class User {
     private Integer id_user;

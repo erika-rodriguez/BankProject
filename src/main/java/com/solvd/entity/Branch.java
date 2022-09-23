@@ -1,4 +1,4 @@
-package entity;
+package  com.solvd.entity;
 
 public class Branch {
     private Integer id_branch;

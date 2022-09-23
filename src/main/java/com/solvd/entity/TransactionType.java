@@ -1,4 +1,4 @@
-package entity;
+package  com.solvd.entity;
 
 public class TransactionType {
     private Integer id_transactionType;

@@ -1,4 +1,4 @@
-package entity;
+package  com.solvd.entity;
 
 public class Salary {
     private Integer id_employee;

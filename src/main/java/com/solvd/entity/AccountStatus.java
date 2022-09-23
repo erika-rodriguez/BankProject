@@ -1,4 +1,4 @@
-package entity;
+package com.solvd.entity;
 
 public class AccountStatus {
     private Integer id_accountStatus;
