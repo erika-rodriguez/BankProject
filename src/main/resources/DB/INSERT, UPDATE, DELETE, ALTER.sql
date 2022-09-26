@@ -37,3 +37,6 @@ DELETE FROM branch WHERE name='Austin';
 DELETE FROM branch WHERE name='Dallas';
 DELETE FROM branch WHERE name='San Francisco';
 DELETE FROM branch WHERE name='Nashville';
+
+ALTER TABLE employee ADD FOREIGN KEY (user_id) REFERENCES user (iduser); ;
+ALTER TABLE customer ADD FOREIGN KEY (user_id) REFERENCES user (iduser); ;
