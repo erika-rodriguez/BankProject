@@ -4,7 +4,8 @@ import com.solvd.JAXB.DateAdapter;
 
 import javax.xml.bind.annotation.*;
 import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
-import java.sql.Date;
+import java.time.LocalDate;
+
 @XmlRootElement(name = "employee")
 @XmlAccessorType (XmlAccessType.FIELD)
 
@@ -18,15 +19,15 @@ public class Employee {
     private String fullName;
     @XmlElement(name = "DOB")
     @XmlJavaTypeAdapter(DateAdapter.class)
-    private Date birth_date;
+    private LocalDate birth_date;
     @XmlElement(name = "HireDate")
     @XmlJavaTypeAdapter(DateAdapter.class)
-    private Date hire_date;
+    private LocalDate hire_date;
 
     public Employee() {
     }
 
-    public Employee(Integer departmentId, String fullName, Date birth_date, Date hire_date) {
+    public Employee(Integer departmentId, String fullName, LocalDate birth_date, LocalDate hire_date) {
         this.departmentId = departmentId;
         this.fullName = fullName;
         this.birth_date = birth_date;
@@ -64,19 +65,19 @@ public class Employee {
         this.fullName = fullName;
     }
 
-    public Date getBirth_date() {
+    public LocalDate getBirth_date() {
         return birth_date;
     }
 
-    public void setBirth_date(Date birth_date) {
+    public void setBirth_date(LocalDate birth_date) {
         this.birth_date = birth_date;
     }
 
-    public Date getHire_date() {
+    public LocalDate getHire_date() {
         return hire_date;
     }
 
-    public void setHire_date(Date hire_date) {
+    public void setHire_date(LocalDate hire_date) {
         this.hire_date = hire_date;
     }
 

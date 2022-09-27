@@ -5,6 +5,8 @@ import com.solvd.JAXB.DateAdapter;
 import javax.xml.bind.annotation.*;
 import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
 import java.sql.Date;
+import java.time.LocalDate;
+
 @XmlRootElement(name = "customer")
 @XmlAccessorType(XmlAccessType.FIELD)
 
@@ -12,20 +14,20 @@ public class Customer {
     @XmlAttribute
     private Integer id_customer;
     private Integer user_id;
-    @XmlElement(name = "Customer name")
+    @XmlElement(name = "Name")
     private String fullName;
     @XmlElement(name = "City")
     private String city;
     @XmlElement(name = "DOB")
     @XmlJavaTypeAdapter(DateAdapter.class)
-    private Date dateOfBirth;
+    private LocalDate dateOfBirth;
     @XmlElement(name = "Mail")
     private String mail;
 
     public Customer() {
     }
 
-    public Customer(String fullName, String city, Date dateOfBirth, String mail) {
+    public Customer(String fullName, String city, LocalDate dateOfBirth, String mail) {
         this.fullName = fullName;
         this.city = city;
         this.dateOfBirth = dateOfBirth;
@@ -63,11 +65,11 @@ public class Customer {
         this.city = city;
     }
 
-    public Date getDateOfBirth() {
+    public LocalDate getDateOfBirth() {
         return dateOfBirth;
     }
 
-    public void setDateOfBirth(Date dateOfBirth) {
+    public void setDateOfBirth(LocalDate dateOfBirth) {
         this.dateOfBirth = dateOfBirth;
     }
 
