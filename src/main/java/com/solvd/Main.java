@@ -1,30 +1,29 @@
 package com.solvd;
 
-import com.mysql.cj.MysqlConnection;
 
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.SQLException;
+import com.solvd.daoImplementation.DB_Connection;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+
+import javax.xml.bind.JAXBException;
+
+import static com.solvd.JAXB.CustomerListJAXB.marshallCustomers;
+import static com.solvd.JAXB.EmployeeListJAXB.marshallEmployees;
 
 public class Main {
+    private static final Logger logger = LogManager.getLogger(Main.class);
+    public static void main(String[] args) throws JAXBException {
+        DB_Connection manager=new DB_Connection();
 
-    public static void main(String[] args) {
-        Connection connection = null;
+//        //Marshal list of Customers
+//        marshallCustomers();
+//        //Marshal list of Employees
+//        marshallEmployees();
 
-        try {
-            //Class.forName("com.mysql.jdbc.Driver");
-            String url = "jdbc:mysql://localhost:3306/bank";
 
-            connection = DriverManager.getConnection(url, "root", "root");
-            System.out.println("I'm in");
-
-        } catch (SQLException ex) {
-            connection = null;
-            ex.printStackTrace();
-            System.out.println("SQLException: " + ex.getMessage());
-            System.out.println("SQLState: " + ex.getSQLState());
-            System.out.println("VendorError: " + ex.getErrorCode());
-        }
-
+//        List <Employee> employeeList=manager.getEmployeeDao().getAll();
+//        List <Customer> customerList=manager.getCustomerDao().getAll();
+//        logger.info(customerList);
     }
+
 }

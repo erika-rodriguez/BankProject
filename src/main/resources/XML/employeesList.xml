@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<employees>
+    <employee idEmployee="1">
+        <DepartmentID>6</DepartmentID>
+        <Name>Suzette Pettey</Name>
+        <DOB>1973-01-23</DOB>
+        <HireDate>1997-05-19</HireDate>
+    </employee>
+    <employee idEmployee="2">
+        <DepartmentID>5</DepartmentID>
+        <Name>James Johnson</Name>
+        <DOB>1974-06-02</DOB>
+        <HireDate>1997-05-19</HireDate>
+    </employee>
+    <employee idEmployee="3">
+        <DepartmentID>1</DepartmentID>
+        <Name>Patricia Davies</Name>
+        <DOB>1984-05-12</DOB>
+        <HireDate>1997-05-19</HireDate>
+    </employee>
+    <employee idEmployee="4">
+        <DepartmentID>4</DepartmentID>
+        <Name>Robert Williams</Name>
+        <DOB>1971-02-22</DOB>
+        <HireDate>1997-05-19</HireDate>
+    </employee>
+    <employee idEmployee="5">
+        <DepartmentID>2</DepartmentID>
+        <Name>Jennifer Brown</Name>
+        <DOB>1980-10-26</DOB>
+        <HireDate>1997-05-19</HireDate>
+    </employee>
+    <employee idEmployee="6">
+        <DepartmentID>3</DepartmentID>
+        <Name>John Taylor</Name>
+        <DOB>1979-12-06</DOB>
+        <HireDate>1997-05-19</HireDate>
+    </employee>
+    <employee idEmployee="7">
+        <DepartmentID>1</DepartmentID>
+        <Name>Sara Wilson</Name>
+        <DOB>1982-11-27</DOB>
+        <HireDate>1997-05-19</HireDate>
+    </employee>
+    <employee idEmployee="8">
+        <DepartmentID>2</DepartmentID>
+        <Name>Thomas Cooper</Name>
+        <DOB>1981-09-14</DOB>
+        <HireDate>1997-05-19</HireDate>
+    </employee>
+    <employee idEmployee="9">
+        <DepartmentID>5</DepartmentID>
+        <Name>Kares Evans</Name>
+        <DOB>1970-08-25</DOB>
+        <HireDate>1997-05-19</HireDate>
+    </employee>
+    <employee idEmployee="10">
+        <DepartmentID>3</DepartmentID>
+        <Name>Daniel Baker</Name>
+        <DOB>1977-07-13</DOB>
+        <HireDate>1997-05-19</HireDate>
+    </employee>
+    <employee idEmployee="11">
+        <DepartmentID>4</DepartmentID>
+        <Name>George McPhil</Name>
+        <DOB>1990-04-13</DOB>
+        <HireDate>2020-08-23</HireDate>
+    </employee>
+    <employee idEmployee="12">
+        <DepartmentID>4</DepartmentID>
+        <Name>Sarah Chang</Name>
+        <DOB>1991-02-09</DOB>
+        <HireDate>2021-07-14</HireDate>
+    </employee>
+</employees>

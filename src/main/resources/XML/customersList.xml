@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<customers>
+    <customer idCustomer="1">
+        <Customer name>Elliot Reid</Customer name>
+        <City>New York</City>
+        <DOB>1992-01-22</DOB>
+        <Mail>ereid@mail.com</Mail>
+    </customer>
+    <customer idCustomer="2">
+        <Customer name>Anne Preusig</Customer name>
+        <City>Boston</City>
+        <DOB>1986-11-02</DOB>
+        <Mail>apreusigd@mail.com</Mail>
+    </customer>
+    <customer idCustomer="3">
+        <Customer name>Tzvetan Zielinski</Customer name>
+        <City>Chicago</City>
+        <DOB>1970-08-26</DOB>
+        <Mail>tzielinskyd@mail.com</Mail>
+    </customer>
+    <customer idCustomer="4">
+        <Customer name>Mary Rissland</Customer name>
+        <City>San Diego</City>
+        <DOB>1990-10-08</DOB>
+        <Mail>mrissland@mail.com</Mail>
+    </customer>
+    <customer idCustomer="5">
+        <Customer name>Berni Peltason</Customer name>
+        <City>New York</City>
+        <DOB>1978-09-15</DOB>
+        <Mail>bpeltasond@mail.com</Mail>
+    </customer>
+    <customer idCustomer="6">
+        <Customer name>Lillian Casperson</Customer name>
+        <City>Chicago</City>
+        <DOB>1981-12-04</DOB>
+        <Mail>lcasperson@mail.com</Mail>
+    </customer>
+    <customer idCustomer="7">
+        <Customer name>Alejandro Esposito</Customer name>
+        <City>Boston</City>
+        <DOB>1988-03-19</DOB>
+        <Mail>aesposito@mail.com</Mail>
+    </customer>
+    <customer idCustomer="8">
+        <Customer name>Nathan Maccarone</Customer name>
+        <City>San Diego</City>
+        <DOB>1998-06-07</DOB>
+        <Mail>nmaccarone@mail.com</Mail>
+    </customer>
+    <customer idCustomer="9">
+        <Customer name>Marla Nastansky</Customer name>
+        <City>Chicago</City>
+        <DOB>1991-07-11</DOB>
+        <Mail>mnastansky@mail.com</Mail>
+    </customer>
+    <customer idCustomer="10">
+        <Customer name>Hugo Lichtner</Customer name>
+        <City>Boston</City>
+        <DOB>1993-02-16</DOB>
+        <Mail>hlichtner@mail.com</Mail>
+    </customer>
+    <customer idCustomer="11">
+        <Customer name>Michael Brook</Customer name>
+        <City>New York</City>
+        <DOB>1993-06-11</DOB>
+        <Mail>mbrook@mail.com</Mail>
+    </customer>
+</customers>
