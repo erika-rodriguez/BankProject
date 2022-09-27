@@ -8,6 +8,7 @@ import java.sql.Connection;
 import java.sql.Date;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -24,7 +25,7 @@ public class CustomerDao extends DB_Connection implements ICustomerDAO {
     public Customer turnToCustomer(ResultSet rs) throws SQLException {
         String fullName= rs.getString("full_name");
         String city= rs.getString("city");
-        Date dob=rs.getDate("date_of_birth");
+        LocalDate dob=rs.getDate("date_of_birth").toLocalDate();
         String mail= rs.getString("mail");
         Customer customer=new Customer(fullName,city,dob,mail);
         customer.setId_customer(rs.getInt("id_customer"));
@@ -79,7 +80,7 @@ public class CustomerDao extends DB_Connection implements ICustomerDAO {
             statement=connection.prepareStatement(INSERT);
             statement.setString(1, customer.getFullName());
             statement.setString(2, customer.getCity());
-            statement.setDate(3, customer.getDateOfBirth());
+            statement.setDate(3, Date.valueOf(customer.getDateOfBirth()));
             statement.setString(4, customer.getMail());
 
             statement.executeUpdate();
@@ -101,7 +102,7 @@ public class CustomerDao extends DB_Connection implements ICustomerDAO {
             statement=connection.prepareStatement(UPDATE);
             statement.setString(1, customer.getFullName());
             statement.setString(2, customer.getCity());
-            statement.setDate(3, customer.getDateOfBirth());
+            statement.setDate(3, Date.valueOf(customer.getDateOfBirth()));
             statement.setString(4, customer.getMail());
             statement.setInt(5, id);
 

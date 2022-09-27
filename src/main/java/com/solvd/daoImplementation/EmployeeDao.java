@@ -3,7 +3,9 @@ package  com.solvd.daoImplementation;
 import  com.solvd.daoInterfaces.IEmployeeDAO;
 import  com.solvd.entity.Employee;
 
+
 import java.sql.*;
+import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -18,11 +20,12 @@ public class EmployeeDao extends DB_Connection implements IEmployeeDAO {
         super();
     }
 
+
     public Employee turnToEmployee(ResultSet rs) throws SQLException {
         Integer department= rs.getInt("department_id");
         String fullName=rs.getString("full_name");
-        Date dob=rs.getDate("birth_date");
-        Date hd=rs.getDate("hire_date");
+        LocalDate dob=rs.getDate("birth_date").toLocalDate();
+        LocalDate hd=rs.getDate("hire_date").toLocalDate();
         Employee employee=new Employee(department,fullName,dob,hd);
         employee.setId_employee(rs.getInt("id_employee"));
         return employee;
@@ -51,6 +54,7 @@ public class EmployeeDao extends DB_Connection implements IEmployeeDAO {
 
     @Override
     public List<Employee> getAll() {
+
         List <Employee> employeeList=new ArrayList<>();
         try {
             connectToDB();
@@ -76,8 +80,8 @@ public class EmployeeDao extends DB_Connection implements IEmployeeDAO {
             statement=connection.prepareStatement(INSERT, Statement.RETURN_GENERATED_KEYS);
             statement.setInt(1, employee.getDepartmentId());
             statement.setString(2, employee.getFullName());
-            statement.setDate(3, employee.getBirth_date());
-            statement.setDate(4, employee.getHire_date());
+            statement.setDate(3, Date.valueOf(employee.getBirth_date()));
+            statement.setDate(4, Date.valueOf(employee.getHire_date()));
 
             statement.executeUpdate();
 
@@ -101,8 +105,8 @@ public class EmployeeDao extends DB_Connection implements IEmployeeDAO {
             statement=connection.prepareStatement(UPDATE);
             statement.setInt(1,employee.getId_employee());
             statement.setString(2, employee.getFullName());
-            statement.setDate(3, employee.getBirth_date());
-            statement.setDate(4, employee.getHire_date());
+            statement.setDate(3, Date.valueOf(employee.getBirth_date()));
+            statement.setDate(4, Date.valueOf(employee.getHire_date()));
             statement.setInt(5, id);
 
             statement.executeUpdate();
