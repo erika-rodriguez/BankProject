@@ -8,7 +8,9 @@ import org.apache.logging.log4j.Logger;
 import javax.xml.bind.JAXBException;
 
 import static com.solvd.JAXB.CustomerListJAXB.marshallCustomers;
+import static com.solvd.JAXB.CustomerListJAXB.unmarshalCustomers;
 import static com.solvd.JAXB.EmployeeListJAXB.marshallEmployees;
+import static com.solvd.JAXB.EmployeeListJAXB.unmarshalEmployees;
 
 public class Main {
     private static final Logger logger = LogManager.getLogger(Main.class);
@@ -17,8 +19,12 @@ public class Main {
 
 //        //Marshal list of Customers
 //        marshallCustomers();
+//        //Unmarshal list of Employees XML
+//        unmarshalCustomers();
 //        //Marshal list of Employees
 //        marshallEmployees();
+//        //Unmarshal list of Employees XML
+//        unmarshalEmployees();
 
 
 //        List <Employee> employeeList=manager.getEmployeeDao().getAll();
