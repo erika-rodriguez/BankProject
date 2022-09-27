@@ -1,13 +1,30 @@
 package  com.solvd.entity;
 
+import com.solvd.JAXB.DateAdapter;
+
+import javax.xml.bind.annotation.*;
+import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
 import java.sql.Date;
+@XmlRootElement(name = "employee")
+@XmlAccessorType (XmlAccessType.FIELD)
 
 public class Employee {
+    @XmlAttribute
     private Integer id_employee;
+    private Integer user_id;
+    @XmlElement(name = "DepartmentID")
     private Integer departmentId;
+    @XmlElement(name = "Name")
     private String fullName;
+    @XmlElement(name = "DOB")
+    @XmlJavaTypeAdapter(DateAdapter.class)
     private Date birth_date;
+    @XmlElement(name = "HireDate")
+    @XmlJavaTypeAdapter(DateAdapter.class)
     private Date hire_date;
+
+    public Employee() {
+    }
 
     public Employee(Integer departmentId, String fullName, Date birth_date, Date hire_date) {
         this.departmentId = departmentId;
@@ -22,6 +39,13 @@ public class Employee {
 
     public void setId_employee(Integer id_employee) {
         this.id_employee = id_employee;
+    }
+    public Integer getUser_id() {
+        return user_id;
+    }
+
+    public void setUser_id(Integer user_id) {
+        this.user_id = user_id;
     }
 
     public Integer getDepartmentId() {
@@ -61,10 +85,13 @@ public class Employee {
     public String toString() {
         return "Employee{" +
                 "id_employee=" + id_employee +
+                ", user_id=" + user_id +
                 ", departmentId=" + departmentId +
                 ", fullName='" + fullName + '\'' +
                 ", birth_date=" + birth_date +
                 ", hire_date=" + hire_date +
                 '}';
     }
+
+
 }

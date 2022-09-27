@@ -1,13 +1,29 @@
 package  com.solvd.entity;
 
+import com.solvd.JAXB.DateAdapter;
+
+import javax.xml.bind.annotation.*;
+import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
 import java.sql.Date;
+@XmlRootElement(name = "customer")
+@XmlAccessorType(XmlAccessType.FIELD)
 
 public class Customer {
+    @XmlAttribute
     private Integer id_customer;
+    private Integer user_id;
+    @XmlElement(name = "Customer name")
     private String fullName;
+    @XmlElement(name = "City")
     private String city;
+    @XmlElement(name = "DOB")
+    @XmlJavaTypeAdapter(DateAdapter.class)
     private Date dateOfBirth;
+    @XmlElement(name = "Mail")
     private String mail;
+
+    public Customer() {
+    }
 
     public Customer(String fullName, String city, Date dateOfBirth, String mail) {
         this.fullName = fullName;
@@ -22,6 +38,13 @@ public class Customer {
 
     public void setId_customer(Integer id_customer) {
         this.id_customer = id_customer;
+    }
+    public Integer getUser_id() {
+        return user_id;
+    }
+
+    public void setUser_id(Integer user_id) {
+        this.user_id = user_id;
     }
 
     public String getFullName() {
@@ -60,6 +83,7 @@ public class Customer {
     public String toString() {
         return "Customer{" +
                 "id_customer=" + id_customer +
+                ", user_id=" + user_id +
                 ", fullName='" + fullName + '\'' +
                 ", city='" + city + '\'' +
                 ", dateOfBirth=" + dateOfBirth +
