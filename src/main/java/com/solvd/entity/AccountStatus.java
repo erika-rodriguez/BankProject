@@ -1,10 +1,17 @@
 package com.solvd.entity;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
+
 public class AccountStatus {
+    @JsonProperty("id_accountStatus")
     private Integer id_accountStatus;
+    @JsonProperty("AccountStatus")
     private String status;
 
-    public AccountStatus( String status) {
+    public AccountStatus() {
+    }
+
+    public AccountStatus(String status) {
         this.status = status;
     }
 

@@ -1,10 +1,17 @@
 package  com.solvd.entity;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
+
 public class TransactionType {
+    @JsonProperty("id_transactionType")
     private Integer id_transactionType;
+    @JsonProperty("Transaction")
     private String transactionName;
 
-    public TransactionType( String transactionName) {
+    public TransactionType() {
+    }
+
+    public TransactionType(String transactionName) {
         this.transactionName = transactionName;
     }
 

@@ -1,10 +1,22 @@
 package  com.solvd.entity;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
+
 public class Branch {
+    @JsonProperty("id_branch")
     private Integer id_branch;
+    @JsonProperty("City")
     private String city;
 
+    public Branch() {
+    }
+
     public Branch(String city) {
+        this.city = city;
+    }
+
+    public Branch(Integer id_branch, String city) {
+        this.id_branch = id_branch;
         this.city = city;
     }
 

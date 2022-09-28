@@ -1,10 +1,22 @@
 package  com.solvd.entity;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
+
 public class Department {
+    @JsonProperty("id_department")
     private Integer id_department;
+    @JsonProperty("DepartmentName")
     private String departmentName;
 
+    public Department() {
+    }
+
     public Department(String departmentName) {
+        this.departmentName = departmentName;
+    }
+
+    public Department(Integer id_department, String departmentName) {
+        this.id_department = id_department;
         this.departmentName = departmentName;
     }
 
