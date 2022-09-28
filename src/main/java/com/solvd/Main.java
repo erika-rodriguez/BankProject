@@ -13,6 +13,8 @@ import static com.solvd.JAXB.CustomerListJAXB.marshallCustomers;
 import static com.solvd.JAXB.CustomerListJAXB.unmarshalCustomers;
 import static com.solvd.JAXB.EmployeeListJAXB.marshallEmployees;
 import static com.solvd.JAXB.EmployeeListJAXB.unmarshalEmployees;
+import static com.solvd.Jackson.AccountJackson.marshalAccount;
+import static com.solvd.Jackson.AccountJackson.unmarshalAccount;
 import static com.solvd.Jackson.AccountStatusJackson.marshalAccountStatus;
 import static com.solvd.Jackson.AccountStatusJackson.unmarshalAccountStatus;
 import static com.solvd.Jackson.BranchJackson.marshalBranch;
@@ -30,6 +32,10 @@ public class Main {
         //Marshal/Unmarshal Departments JACKSON
         //marshalDepartments();
         //unmarshalDepartments();
+
+        //Marshal/Unmarshal Account JACKSON
+        //marshalAccount();
+        unmarshalAccount();
 
         //Marshal/Unmarshal AccountStatus JACKSON
         //marshalAccountStatus();
