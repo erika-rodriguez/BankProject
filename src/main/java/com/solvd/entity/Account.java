@@ -1,16 +1,29 @@
 package com.solvd.entity;
 
+import com.fasterxml.jackson.annotation.JsonFormat;
+import com.fasterxml.jackson.annotation.JsonProperty;
+
 import java.sql.Date;
 
 public class Account {
+    @JsonProperty("id_account")
     private Integer id_account;
+    @JsonProperty("customerId")
     private Integer customerId;
+    @JsonProperty("branchId")
     private Integer branchId;
+    @JsonProperty("accountStatusId")
     private Integer accountStatusId;
+    @JsonProperty("OpeningDate")
+    @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "DD/MM/YYYY")
     private Date openingDate;
+    @JsonProperty("Balance")
     private int balance;
 
-    public Account( Integer customerId, Integer branchId, Integer accountStatusId, Date openingDate, int balance) {
+    public Account() {
+    }
+
+    public Account(Integer customerId, Integer branchId, Integer accountStatusId, Date openingDate, int balance) {
         this.customerId = customerId;
         this.branchId = branchId;
         this.accountStatusId = accountStatusId;
