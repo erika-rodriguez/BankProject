@@ -1,7 +1,7 @@
 package  com.solvd.daoInterfaces;
 
 
-import  com.solvd.entity.Department;
+import  com.solvd.entities.Department;
 
 public interface IDepartmentDAO extends IGenericDAO<Department,Integer> {
 }

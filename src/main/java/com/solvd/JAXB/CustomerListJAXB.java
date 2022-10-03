@@ -2,7 +2,7 @@ package com.solvd.JAXB;
 
 import com.solvd.Main;
 import com.solvd.daoImplementation.DB_Connection;
-import com.solvd.entity.Customer;
+import com.solvd.entities.Customer;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;

@@ -1,7 +1,7 @@
 package  com.solvd.daoImplementation;
 
 import  com.solvd.daoInterfaces.IDepartmentDAO;
-import  com.solvd.entity.Department;
+import  com.solvd.entities.Department;
 
 import java.sql.Connection;
 import java.sql.ResultSet;

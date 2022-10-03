@@ -1,11 +1,8 @@
 package com.solvd.Jackson;
 
-import com.fasterxml.jackson.core.JsonParseException;
-import com.fasterxml.jackson.core.type.TypeReference;
-import com.fasterxml.jackson.databind.JsonMappingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.solvd.daoImplementation.DB_Connection;
-import com.solvd.entity.Department;
+import com.solvd.entities.Department;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 

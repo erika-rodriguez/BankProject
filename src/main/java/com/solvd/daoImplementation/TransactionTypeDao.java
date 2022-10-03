@@ -1,7 +1,7 @@
 package  com.solvd.daoImplementation;
 
 import  com.solvd.daoInterfaces.ITransactionTypeDAO;
-import  com.solvd.entity.TransactionType;
+import  com.solvd.entities.TransactionType;
 
 import java.sql.Connection;
 import java.sql.ResultSet;

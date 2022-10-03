@@ -1,7 +1,7 @@
 package  com.solvd.daoImplementation;
 
 import  com.solvd.daoInterfaces.ISalaryDAO;
-import  com.solvd.entity.Salary;
+import  com.solvd.entities.Salary;
 
 import java.sql.Connection;
 import java.sql.ResultSet;

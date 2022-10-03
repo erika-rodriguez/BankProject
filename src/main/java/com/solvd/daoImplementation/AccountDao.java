@@ -1,8 +1,7 @@
 package  com.solvd.daoImplementation;
 
 import  com.solvd.daoInterfaces.IAccountDAO;
-import  com.solvd.entity.Account;
-import  com.solvd.entity.Employee;
+import  com.solvd.entities.Account;
 
 import java.sql.*;
 import java.util.ArrayList;

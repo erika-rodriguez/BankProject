@@ -1,7 +1,7 @@
 package  com.solvd.daoImplementation;
 
 import  com.solvd.daoInterfaces.ITransactionDAO;
-import  com.solvd.entity.Transaction;
+import  com.solvd.entities.Transaction;
 
 import java.sql.*;
 import java.util.ArrayList;

@@ -2,6 +2,9 @@ package com.solvd;
 
 
 import com.solvd.daoImplementation.DB_Connection;
+import com.solvd.myBatis.connection.ConnectionFactory;
+import com.solvd.myBatis.mapper.IAccountMapper;
+import org.apache.ibatis.session.SqlSession;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -29,13 +32,17 @@ public class Main {
     public static void main(String[] args) throws JAXBException, IOException {
         DB_Connection manager=new DB_Connection();
 
+        //MyBatis
+        SqlSession session= new ConnectionFactory().buildConnection();
+        System.out.println(session.getMapper(IAccountMapper.class).getAccountById(50001));
+
         //Marshal/Unmarshal Departments JACKSON
         //marshalDepartments();
         //unmarshalDepartments();
 
         //Marshal/Unmarshal Account JACKSON
         //marshalAccount();
-        unmarshalAccount();
+        //unmarshalAccount();
 
         //Marshal/Unmarshal AccountStatus JACKSON
         //marshalAccountStatus();

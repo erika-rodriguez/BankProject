@@ -2,7 +2,7 @@ package com.solvd.Jackson;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.solvd.daoImplementation.DB_Connection;
-import com.solvd.entity.Account;
+import com.solvd.entities.Account;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 

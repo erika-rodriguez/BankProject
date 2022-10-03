@@ -1,6 +1,6 @@
 package  com.solvd.daoInterfaces;
 
-import  com.solvd.entity.Salary;
+import  com.solvd.entities.Salary;
 
 public interface ISalaryDAO extends IGenericDAO<Salary,Integer> {
 }

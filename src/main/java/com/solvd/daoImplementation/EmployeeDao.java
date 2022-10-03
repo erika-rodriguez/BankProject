@@ -1,7 +1,7 @@
 package  com.solvd.daoImplementation;
 
 import  com.solvd.daoInterfaces.IEmployeeDAO;
-import  com.solvd.entity.Employee;
+import  com.solvd.entities.Employee;
 
 
 import java.sql.*;
