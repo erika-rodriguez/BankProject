@@ -1,6 +1,6 @@
 package  com.solvd.entities;
 
-import com.solvd.JAXB.DateAdapter;
+import com.solvd.xmlMapper.DateAdapter;
 
 import javax.xml.bind.annotation.*;
 import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
