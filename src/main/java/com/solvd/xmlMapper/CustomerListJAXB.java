@@ -1,4 +1,4 @@
-package com.solvd.JAXB;
+package com.solvd.xmlMapper;
 
 import com.solvd.Main;
 import com.solvd.daoImplementation.DB_Connection;
