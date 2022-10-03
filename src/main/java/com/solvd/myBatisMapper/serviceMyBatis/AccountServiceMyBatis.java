@@ -1,4 +1,4 @@
-package com.solvd.serviceMyBatis;
+package com.solvd.myBatisMapper.serviceMyBatis;
 
 import com.solvd.myBatisMapper.connection.ConnectionFactory;
 import com.solvd.myBatisMapper.mapper.IAccountMapper;
