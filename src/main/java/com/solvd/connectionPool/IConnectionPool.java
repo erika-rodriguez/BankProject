@@ -1,4 +1,4 @@
-package com.solvd.ConnectionPool;
+package com.solvd.connectionPool;
 
 import java.sql.Connection;
 
