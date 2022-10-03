@@ -1,4 +1,4 @@
-package com.solvd.entity;
+package com.solvd.entities;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
 import com.fasterxml.jackson.annotation.JsonProperty;
