@@ -1,4 +1,4 @@
-package com.solvd.Jackson;
+package com.solvd.jsonMapper;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.solvd.daoImplementation.DB_Connection;
