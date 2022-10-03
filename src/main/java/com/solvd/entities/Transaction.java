@@ -1,4 +1,4 @@
-package  com.solvd.entity;
+package  com.solvd.entities;
 
 import java.sql.Date;
 
