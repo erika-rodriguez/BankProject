@@ -1,8 +1,6 @@
 package com.solvd.myBatisMapper.connection;
 
 
-import com.solvd.myBatisMapper.mapper.IAccountMapper;
-import com.solvd.serviceMyBatis.AccountServiceMyBatis;
 import org.apache.ibatis.datasource.pooled.PooledDataSource;
 import org.apache.ibatis.mapping.Environment;
 import org.apache.ibatis.session.Configuration;
