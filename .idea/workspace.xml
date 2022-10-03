@@ -6,18 +6,10 @@
   <component name="ChangeListManager">
     <list default="true" id="f597b009-02fd-47ed-a84f-68539e237490" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/solvd/JAXB/CustomerListJAXB.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/solvd/xmlMapper/CustomerListJAXB.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/solvd/JAXB/DateAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/solvd/xmlMapper/DateAdapter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/solvd/JAXB/EmployeeListJAXB.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/solvd/xmlMapper/EmployeeListJAXB.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/solvd/Jackson/AccountJackson.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/solvd/jsonMapper/AccountJackson.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/solvd/Jackson/AccountStatusJackson.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/solvd/jsonMapper/AccountStatusJackson.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/solvd/Jackson/BranchJackson.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/solvd/jsonMapper/BranchJackson.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/solvd/Jackson/DepartmentJackson.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/solvd/jsonMapper/DepartmentJackson.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/solvd/Jackson/TransactionTypeJackson.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/solvd/jsonMapper/TransactionTypeJackson.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/solvd/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/solvd/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/solvd/entities/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/solvd/entities/Customer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/solvd/entities/Employee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/solvd/entities/Employee.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/solvd/myBatisMapper/connection/ConnectionFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/solvd/myBatisMapper/connection/ConnectionFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/solvd/serviceMyBatis/AccountServiceMyBatis.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/solvd/myBatisMapper/serviceMyBatis/AccountServiceMyBatis.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -87,7 +79,7 @@
       <module name="BankProject" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.solvd.myBatis.*" />
+          <option name="PATTERN" value="com.solvd.myBatisMapper.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -97,7 +89,6 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Runner" />
         <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
