@@ -4,6 +4,7 @@ import com.fasterxml.jackson.annotation.JsonFormat;
 import com.fasterxml.jackson.annotation.JsonProperty;
 
 import java.sql.Date;
+import java.time.LocalDate;
 
 public class Account {
     @JsonProperty("id_account")
@@ -16,14 +17,14 @@ public class Account {
     private Integer accountStatusId;
     @JsonProperty("OpeningDate")
     @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "DD/MM/YYYY")
-    private Date openingDate;
+    private LocalDate openingDate;
     @JsonProperty("Balance")
     private int balance;
 
     public Account() {
     }
 
-    public Account(Integer customerId, Integer branchId, Integer accountStatusId, Date openingDate, int balance) {
+    public Account(Integer customerId, Integer branchId, Integer accountStatusId, LocalDate openingDate, int balance) {
         this.customerId = customerId;
         this.branchId = branchId;
         this.accountStatusId = accountStatusId;
@@ -63,11 +64,11 @@ public class Account {
         this.accountStatusId = accountStatusId;
     }
 
-    public Date getOpeningDate() {
+    public LocalDate getOpeningDate() {
         return openingDate;
     }
 
-    public void setOpeningDate(Date openingDate) {
+    public void setOpeningDate(LocalDate openingDate) {
         this.openingDate = openingDate;
     }
 
